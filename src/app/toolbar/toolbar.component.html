@@ -1,0 +1,21 @@
+<mat-toolbar *ngIf="(user$ | async ) as user" class="toolbar">
+
+
+    <span>
+        <img src="../../assets/ngBarber.png" alt="logo" class="logo">
+    </span>
+
+    <span class="user">
+        <img *ngIf="user.photoURL" [src]="user.photoURL" alt="logo" class="avatar">
+        <span>Bem-vindo, {{user.displayName}}</span>
+    </span>
+
+
+    <img src="" alt="" class="user">
+    <span class="example-spacer"></span>
+    <span class="link" routerLink="/home" [routerLinkActive]="['active']">Home</span>
+    <span class="link" routerLink="/dashboard" [routerLinkActive]="['active']">Dashboard</span>
+    <span class="link" (click)="sair()">Sair</span>
+
+
+</mat-toolbar>

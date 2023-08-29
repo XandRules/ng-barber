@@ -1,0 +1,38 @@
+
+
+mat-card {
+    width: 400px;
+    padding: 20px;
+  }
+
+  .logo{
+   margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      object-fit: fill;
+    
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .flex-item:nth-child(1) {
+    margin-top: 60px;
+    
+  }
+  
+  .flex-item{
+    margin-bottom: 30px;
+  }
+  
+  .icon-button{
+    border: 0;
+    background: transparent;
+    margin-right: 5px;
+  }
+  
+  
